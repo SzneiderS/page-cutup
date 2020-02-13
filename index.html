@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spalinowe pola</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/styles.css">
+</head>
+
+<body>
+    <div class="rel container" id="logo">
+        <span class="float-right font-weight-bold text-secondary">PL/EN</span><br />
+        <span class="float-right font-weight-bold text-secondary">Mapa serwisu</span>
+        <div class="w-50 mx-auto mt-3 mb-6">
+            <img src="dist/img/logo.svg" alt="Logo" class="w-100">
+        </div>
+    </div>
+    <div class="sticky">
+        <div class="container">
+            <nav class="navbar navbar-expand-auto mx-auto navbar-light custom">
+                <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white br-30" id="menu">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item no-anim">
+                            <div class="mini-logo">
+                                <img src="dist/img/logo-min.svg" alt="Logo">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aktualnosci">Aktualności</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#turnieje">Turnieje</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#arena">Arena</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noclegi">Noclegi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#akademia">Akademia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#abc">ABC rozwałki</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="rel" id="top">
+        <div class="container rel">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-5 pt-20 pb-20">
+                    <table>
+                        <tr>
+                            <td class="text-uppercase">Polecane spluwy</td>
+                        </tr>
+                        <tr>
+                            <td class="text-uppercase">Zabawki</td>
+                        </tr>
+                        <tr>
+                            <td class="text-uppercase">Savoir vivre niszczenia</td>
+                        </tr>
+                        <tr>
+                            <td class="text-uppercase">Regulamin niszczenia</td>
+                        </tr>
+                        <tr>
+                            <td class="text-uppercase">Słownik dziwnych słów</td>
+                        </tr>
+                        <tr>
+                            <td class="text-uppercase">Historia rozwałek</td>
+                        </tr>
+                        <tr>
+                            <td class="text-uppercase">Noclegi</td>
+                        </tr>
+                        <tr>
+                            <td class="text-uppercase">Polecane pancerze</td>
+                        </tr>
+                        <tr>
+                            <td class="text-uppercase">Polecane pojazdy</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-xl-6 col-lg-4 col-md-1 col-sm-1"></div>
+                <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 weather-info float-right">
+                    <p class="text-uppercase">Pogoda</p>
+                    <hr>
+                    <div class="details row">
+                        <div class="col"><span class="text-uppercase font-weight-bold">Dzisiaj</span></div>
+                        <div class="col">48°C<img src="dist/img/meteor.png" alt="pogoda"></48>
+                        </div>
+                        <div class="col">Problemy<br /> Mnóstwo problemów</div>
+                    </div>
+                    <hr>
+                    <div class="details row">
+                        <div class="col px-1">Pn<br>52°C<img src="dist/img/meteor.png" alt="pogoda"></div>
+                        <div class="col px-1">Wt<br>48°C<img src="dist/img/meteor.png" alt="pogoda"></div>
+                        <div class="col px-1">Śr<br>43°C<img src="dist/img/meteor.png" alt="pogoda"></div>
+                        <div class="col px-1">Czw<br>40°C<img src="dist/img/meteor.png" alt="pogoda"></div>
+                        <div class="col px-1">Pt<br>49°C<img src="dist/img/meteor.png" alt="pogoda"></div>
+                        <div class="col px-1">Sob<br>55°C<img src="dist/img/meteor.png" alt="pogoda"></div>
+                        <div class="col px-1">Nie<br>66°C<img src="dist/img/meteor.png" alt="pogoda"></div>
+                    </div>
+                    <p class="text-center pt-2">
+                        <a href="#" class="down-arrow">&darr;</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="h-100 overflow y-hidden abs abs-top z-indexn1 bg-container">
+            <img src="dist/img/landscape-view.jpg" alt="Widok na pola" class="w-100 parallax">
+        </div>
+    </div>
+    <a name="aktualnosci" data-anchor-y-offset="50"></a>
+    <div class="rel mt-5" id="news">
+        <div class="container">
+            <h1 class="text-center text-uppercase pb-5">Aktualności</h1>
+            <div class="row">
+                <div class="col-xl-3 col-md-12">
+                    2019-06-07<br />
+                    <span class="font-weight-bold">Dzisiaj rozwałki nie ma!</span>
+                </div>
+                <div class="col-xl-9 col-md-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum eligendi aut
+                    maiores voluptates? Quis quod earum iure praesentium autem sit repellat quae culpa eius numquam?
+                    Ipsam
+                    quis delectus vel.Rerum atque dignissimos tempore nostrum corrupti, quod vel deleniti natus labore,
+                    magni veniam ullam expedita nisi perspiciatis necessitatibus repudiandae minima accusantium optio
+                    laboriosam, amet consectetur quaerat iste! Quo, placeat impedit.
+                    <div>
+                        <a href="#wincyj" class="float-right">Więcej &gt;</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-dark">
+            <div class="row">
+                <div class="col-xl-3 col-md-12">
+                    2019-06-07<br />
+                    <span class="font-weight-bold">Dzisiaj rozwałki nie ma!</span>
+                </div>
+                <div class="col-xl-9 col-md-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum eligendi aut
+                    maiores voluptates? Quis quod earum iure praesentium autem sit repellat quae culpa eius numquam?
+                    Ipsam
+                    quis delectus vel.Rerum atque dignissimos tempore nostrum corrupti, quod vel deleniti natus labore,
+                    magni veniam ullam expedita nisi perspiciatis necessitatibus repudiandae minima accusantium optio
+                    laboriosam, amet consectetur quaerat iste! Quo, placeat impedit.
+                    <div>
+                        <a href="#wincyj" class="float-right">Więcej &gt;</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-dark">
+            <div class="row">
+                <div class="col-xl-3 col-md-12">
+                    2019-06-07<br />
+                    <span class="font-weight-bold">Dzisiaj rozwałki nie ma!</span>
+                </div>
+                <div class="col-xl-9 col-md-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum eligendi aut
+                    maiores voluptates? Quis quod earum iure praesentium autem sit repellat quae culpa eius numquam?
+                    Ipsam
+                    quis delectus vel.Rerum atque dignissimos tempore nostrum corrupti, quod vel deleniti natus labore,
+                    magni veniam ullam expedita nisi perspiciatis necessitatibus repudiandae minima accusantium optio
+                    laboriosam, amet consectetur quaerat iste! Quo, placeat impedit.
+                    <div>
+                        <a href="#wincyj" class="float-right">Więcej &gt;</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-dark">
+            <div class="row">
+                <div class="col-xl-3 col-md-12">
+                    2019-06-07<br />
+                    <span class="font-weight-bold">Dzisiaj rozwałki nie ma!</span>
+                </div>
+                <div class="col-xl-9 col-md-12">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsum eligendi aut
+                    maiores voluptates? Quis quod earum iure praesentium autem sit repellat quae culpa eius numquam?
+                    Ipsam
+                    quis delectus vel.Rerum atque dignissimos tempore nostrum corrupti, quod vel deleniti natus labore,
+                    magni veniam ullam expedita nisi perspiciatis necessitatibus repudiandae minima accusantium optio
+                    laboriosam, amet consectetur quaerat iste! Quo, placeat impedit.
+                    <div>
+                        <a href="#wincyj" class="float-right">Więcej &gt;</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-dark">
+            <p class="text-center pt-3">
+                <a href="#turnieje" class="down-arrow">&darr;</a>
+            </p>
+        </div>
+    </div>
+    <a name="turnieje"></a>
+    <div class="rel" id="tournaments">
+        <div class="container">
+            <h1 class="text-center text-uppercase pt-10 pb-2">Turnieje</h1>
+            <br />
+            <h2 class="text-uppercase pb-4">Kalendarz turniejów 2019</h2>
+            <div class="row">
+                <div class="col-xl-6 col-md-12">
+                    <p class="font-weight-bold">Kwiecień</p>
+                    Otwarcie sezonu<br />
+                    Eliminacje<br />
+                    Walki juniorów
+                    <hr>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <p class=" font-weight-bold">Maj</p>
+                    Otwarcie sezonu<br />
+                    Eliminacje<br />
+                    Walki juniorów
+                    <hr>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <p class=" font-weight-bold">Czerwiec</p>
+                    Otwarcie sezonu<br />
+                    Eliminacje<br />
+                    Walki juniorów
+                    <hr>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <p class=" font-weight-bold">Lipiec</p>
+                    Otwarcie sezonu<br />
+                    Eliminacje<br />
+                    Walki juniorów
+                    <hr>
+                </div>
+            </div>
+            <p class="text-center pt-10 pb-20">
+                <a href="#arena" class="down-arrow">&darr;</a>
+            </p>
+        </div>
+        <div class="h-100 overflow y-hidden abs abs-top z-indexn2 bg-container">
+            <img src="dist/img/tournament.jpg" alt="Turnieje" class="w-100 parallax">
+        </div>
+        <div class="h-100 w-100 blend z-indexn1 abs abs-top">&nbsp;</div>
+    </div>
+    <a name="arena" data-anchor-y-offset="100"></a>
+    <div class="rel" id="arena">
+        <h1 class="text-center text-uppercase pb-5">arena</h1>
+        <div class="container pb-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quo eum consectetur quos autem architecto nam
+            iusto sapiente dicta repellendus inventore laboriosam incidunt illo vitae. Dignissimos dicta ipsa eaque
+            corporis.
+            Consectetur ab distinctio, amet laboriosam et hic officia quas? Aliquid, cupiditate, quis consequatur
+            voluptates nam temporibus unde accusamus, rem dolores vel nostrum ad quas minima cumque ipsam suscipit
+            voluptate deleniti!
+            Cupiditate pariatur impedit voluptas, quae, eius quisquam aliquam quas suscipit corrupti inventore earum rem
+            non sed ut architecto similique consequuntur accusamus nostrum porro quos voluptates? Sequi laboriosam fugit
+            quidem cupiditate.
+            Labore quia qui obcaecati aliquid esse culpa corrupti modi non eaque. Voluptatibus odio labore id veniam
+            veritatis minus aperiam aspernatur cum, distinctio amet, et aliquam, suscipit ducimus molestiae similique.
+            Esse?
+            Nemo voluptas cupiditate consequatur illo quod nesciunt ab in, amet minus asperiores fugiat officiis alias
+            tenetur fuga quisquam, obcaecati accusamus vero eum repellat, tempora pariatur nostrum reprehenderit sed
+            odio. Nemo?
+        </div>
+    </div>
+    <a name="noclegi"></a>
+    <div class="rel" id="beds">
+        <h1 class="text-center text-uppercase pt-15">Noclegi</h1>
+        <div class="container">
+            <p class="text-uppercase text-center">Cennik | Galeria</p>
+            <div class="row">
+                <div class="col-xl-6 col-md-12 pb-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam ab, ducimus minus vitae quibusdam
+                    delectus molestias quaerat rem consequatur facilis? Esse quae excepturi similique laborum nulla
+                    exercitationem error, molestiae voluptas.
+                    Autem eaque, soluta nostrum unde quisquam eveniet cumque veritatis ex repellat. Blanditiis aperiam
+                    odio voluptate voluptas exercitationem perferendis, laboriosam quis cumque, consectetur ipsam harum
+                    doloribus cupiditate voluptatem unde quas ad!
+                    Libero ipsum magnam aspernatur quisquam voluptatibus repellendus dolorem, rerum mollitia veniam
+                    harum doloremque natus quae ad illo laudantium! Sit accusantium quod amet hic quasi ullam dolor
+                    delectus similique odio ut.
+                </div>
+                <div class="col-xl-6 col-md-12 pb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consectetur cumque corrupti mollitia!
+                    Amet doloribus laudantium vel illo, accusamus quaerat consectetur sed accusantium quasi fugiat
+                    corrupti architecto eos quis officiis.
+                    At aliquam, porro ea quas voluptas facilis illum sapiente ut. Voluptatibus minima ad laborum ipsum
+                    magni esse totam molestias rem, facere dolorem vitae quod inventore natus nesciunt perspiciatis,
+                    recusandae iure.
+                    Soluta beatae, alias, repellendus exercitationem magnam delectus, et expedita dolor distinctio
+                    adipisci sed. At nesciunt repudiandae sed architecto vel, eligendi, delectus nemo quas totam quo
+                    vitae modi itaque unde dolorum.
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-xl-6 col-md-12 pb-1">
+                    <img src="dist/img/car1.jpg" class="w-100" alt="Czołgowóz">
+                </div>
+                <div class="col-xl-6 col-md-12 pb-1">
+                    <img src="dist/img/car2.jpg" class="w-100" alt="Jeździk">
+                </div>
+            </div>
+        </div>
+        <p class="text-center pt-5 pb-15">
+            <a href="#akademia" class="down-arrow">&darr;</a>
+        </p>
+        <div class="h-100 w-100 bg z-indexn1 abs abs-top">&nbsp;</div>
+    </div>
+    <a name="akademia" data-anchor-y-offset="100"></a>
+    <div class="rel" id="academy">
+        <h1 class="text-center text-uppercase">Akademia</h1>
+        <p class="text-uppercase text-center">Lekcje z mistrzami | Plac bojowy | Samochody testowe</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repudiandae eligendi, dolor
+                        labore eveniet natus incidunt impedit dolorum dignissimos nostrum commodi amet suscipit
+                        obcaecati aperiam minus dolorem beatae, libero sed!Minus tempore veniam sunt alias voluptates
+                        iure dolore, soluta aspernatur rem, aut, nesciunt nisi tenetur inventore! Culpa dolorem,
+                        voluptas laborum aliquid, veritatis facilis quod delectus, deserunt vel consequatur perspiciatis
+                        nulla.
+                    </p>
+                    <h2 class="font-weight-bold">Cennik</h2>
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr class="font-weight-bold">
+                                <td>
+                                    <h2 class="shrink-on-mobile">Akademia rozwałki</h2>
+                                </td>
+                                <td>
+                                    <h2 class="shrink-on-mobile">Dla wymiataczy</h2>
+                                </td>
+                                <td>
+                                    <h2 class="shrink-on-mobile">Dla noob'ów</h2>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Akcja na polu</td>
+                                <td>0 Ω</td>
+                                <td>30 Ω</td>
+                            </tr>
+                            <tr>
+                                <td>Wypożyczenie niszczyciela kontynentów</td>
+                                <td>1000 Ω</td>
+                                <td>1500 Ω</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <img src="dist/img/prices.jpeg" class="h-500px w-100 pt-5 pb-5 cover-fit" alt="Ceny">
+                </div>
+            </div>
+        </div>
+        <div class="h-100 w-100 bg z-indexn1 abs abs-top" style="top:-8rem;">&nbsp;</div>
+    </div>
+    <a name="abc"></a>
+    <div class="rel" id="abc">
+        <div class="container pt-15">
+            <h1 class="text-center text-uppercase pb-5">ABC rozwałki</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In officiis magni quia non, quis explicabo
+                earum tenetur, repellat, illum iste hic voluptates perferendis dolor at natus pariatur quas obcaecati
+                ratione.Iste necessitatibus unde perferendis non eaque porro illum eligendi sunt? Fuga laudantium ad
+                debitis doloribus, voluptatum illo eum eveniet dolorum porro quam asperiores totam amet aspernatur
+                consectetur illum ratione commodi.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, est nisi. Officiis, odit? Iusto numquam
+                optio porro commodi itaque voluptatum dolorum voluptas dolorem? Corrupti voluptas quis impedit laborum
+                autem optio.
+                Quisquam vel libero, excepturi impedit enim saepe repudiandae culpa mollitia eius officia iste natus.
+                Odio, ipsam consequatur eum quam ullam dignissimos perspiciatis provident ad reiciendis incidunt?
+                Eligendi nemo maiores neque.
+                Excepturi vel ex quidem, quaerat ipsa dolores harum? Magnam porro deserunt dolores illum, officiis
+                quibusdam minus tenetur id quod incidunt eveniet non mollitia fugit doloribus, praesentium et debitis
+                repellat voluptatum.
+                Consectetur numquam atque ipsam officiis, tenetur dolorum quidem explicabo sit labore repudiandae omnis
+                sapiente corporis voluptas, debitis voluptate neque eos sunt cupiditate similique porro, perferendis
+                perspiciatis blanditiis? Ut, officia eum!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere molestias dolorem beatae
+                nostrum! Sunt iure laborum maiores officiis aliquid necessitatibus provident ut, dolor nihil molestiae
+                ipsam culpa nulla magnam.
+                Delectus dolore nisi accusantium, animi voluptas odit, enim neque officiis illum reiciendis nulla
+                assumenda quisquam expedita perferendis. Non fuga ipsa veritatis odit eos, blanditiis eaque nesciunt
+                maxime aperiam, expedita eius?
+                Corporis excepturi nobis dolorem impedit officia sed, illum vel veritatis minus voluptatum? Nostrum
+                illum nesciunt qui aliquid doloribus provident voluptatum veritatis quo! Architecto eaque, quibusdam
+                quos ducimus harum dolorum officia.
+            </p>
+            <p class="text-center pt-10 pb-20">
+                <a href="#kontakt" class="down-arrow">&darr;</a>
+            </p>
+        </div>
+        <div class="h-100 overflow y-hidden abs abs-top z-indexn2 bg-container">
+            <img src="dist/img/abc.jpg" alt="Turnieje" class="w-100 parallax">
+        </div>
+        <div class="h-100 w-100 blend z-indexn1 abs abs-top">&nbsp;</div>
+    </div>
+    <a name="kontakt" data-anchor-y-offset="100"></a>
+    <div class="rel" id="contact">
+        <h1 class="text-center text-uppercase">Kontakt</h1>
+        <div class="container-fluid">
+            <div class="row pt-5 w-80 mx-auto">
+                <div class="col-xl-6 col-md-12">
+                    <p class="font-weight-bold pt-3">
+                        Adres pola:
+                    </p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione blanditiis voluptates quasi quos
+                    fuga placeat, et, laudantium itaque tempore ipsam repudiandae ea id amet nam at? Ratione, illo eius!
+                    Placeat.Quae, adipisci praesentium iure consectetur accusamus, nostrum ullam eligendi est totam
+                    repellat, quisquam pariatur voluptates voluptate at! Veniam, vel facere. Dolores ut dolore
+                    perspiciatis cum, magnam debitis officia sunt a!
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <p class="font-weight-bold pt-3">
+                        Dane do odszkodowań:
+                    </p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, minima commodi fugit porro earum
+                    dolorum modi quae recusandae. Quaerat, molestias. Possimus ipsum, magnam ex neque ipsam culpa veniam
+                    placeat explicabo.Velit ducimus iste cupiditate, quod placeat cum vero voluptas dolores nemo,
+                    repudiandae rem quos, quis sequi beatae minima natus. Laudantium rerum ipsum mollitia dolores aut
+                    accusantium aliquam consequuntur ipsam est.
+                </div>
+            </div>
+            <p class="pt-5 pb-5 mx-auto w-90">
+                <img src="dist/img/mapa.png" class="w-100" alt="Mapa">
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid w-80">
+            <div class="row">
+                <div class="col-xl-3 col-md-3 my-auto pt-3 pb-3">
+                    <img src="dist/img/logo.png" class="w-100" alt="">
+                </div>
+                <div class="col-xl-9 col-md-9 my-auto">
+                    <ul class="float-right">
+                        <li><a href="#politykaprywatnosci" class="text-uppercase">Polityka prywatności</a></li>
+                        <li><a href="#regulamin" class="text-uppercase">Regulamin</a></li>
+                        <li><a href="#wspolpraca" class="text-uppercase">Współpraca</a></li>
+                        <li><a href="#noclegi" class="text-uppercase">Noclegi</a></li>
+                        <li><a href="#zbrojownia" class="text-uppercase">Zbrojownia</a></li>
+                        <li><a href="#arena" class="text-uppercase">Arena</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="dist/all.min.js"></script>
+</body>
+
+</html>

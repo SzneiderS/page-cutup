@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css?family=Electrolize|Montserrat");
+
+body {
+  font-family: "Montserrat", "Electrolize", Arial, Helvetica;
+}
+
+.navbar-expand-auto {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  .navbar-nav {
+    flex-direction: row;
+    .dropdown-menu {
+      position: absolute;
+    }
+    .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      display: block;
+      height: 100%;
+      padding-top: 25px;
+      transition: background 1s, color 0.5s;
+      &:hover {
+        background: #f2c278;
+        color: white;
+      }
+    }
+  }
+  .navbar-collapse {
+    &.show {
+      display: flex !important;
+      flex-basis: auto;
+      overflow: hidden;
+    }
+  }
+  .navbar-toggler {
+    display: none;
+    &.show {
+      display: initial;
+    }
+  }
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  & ~ .navbar-collapse {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  }
+}
+
+.down-arrow {
+  font-size: 1000%;
+  line-height: 50%;
+}
+
+.custom {
+  &.navbar {
+    text-transform: uppercase;
+    font-size: 1.1em;
+  }
+}
+#menu {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@for $i from 1 through 5 {
+  .br-#{$i * 10} {
+    border-radius: #{$i * 10}px;
+  }
+}
+
+@for $i from 1 through 10 {
+  .maxh-#{$i * 100}px {
+    max-height: #{$i * 100}px;
+  }
+}
+
+@for $i from 1 through 10 {
+  .h-#{$i * 100}px {
+    height: #{$i * 100}px;
+  }
+}
+
+@for $i from 1 through 10 {
+  .maxw-#{$i * 100}px {
+    max-width: #{$i * 100}px;
+  }
+}
+
+@for $i from 1 through 10 {
+  .w-#{$i * 100}px {
+    width: #{$i * 100}px;
+  }
+}
+
+.overflow {
+  &.x-hidden {
+    overflow-x: hidden;
+  }
+  &.y-hidden {
+    overflow-y: hidden;
+  }
+  img {
+    object-fit: cover;
+  }
+}
+
+img {
+  &.parallax {
+    position: relative;
+    height: 150%;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.rel {
+  position: relative;
+}
+
+@for $i from 1 through 10 {
+  .z-indexn#{$i} {
+    z-index: -#{$i};
+  }
+}
+
+@for $i from 1 through 20 {
+  .h-#{$i * 10} {
+    height: #{$i * 10%};
+  }
+}
+
+@for $i from 1 through 20 {
+  .w-#{$i * 10} {
+    width: #{$i * 10%};
+  }
+}
+
+@for $i from -50 through 50 {
+  .pt-#{$i} {
+    padding-top: #{$i * 0.5 + 0.5}rem !important;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i * 0.5 + 0.5}rem !important;
+  }
+}
+@for $i from -50 through 50 {
+  .mt-#{$i} {
+    margin-top: #{$i * 0.5 + 0.5}rem !important;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i * 0.5 + 0.5}rem !important;
+  }
+}
+
+.abs {
+  position: absolute;
+  &-left {
+    left: 0;
+  }
+  &-top {
+    top: 0;
+  }
+  &-right {
+    right: 0;
+  }
+  &-bottom {
+    bottom: 0;
+  }
+}
+
+.footer {
+  position: relative;
+  background: darkslategray;
+  a {
+    color: gray;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      padding-right: 2em;
+    }
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .shrink-on-mobile {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .shrink-on-mobile {
+    font-size: 1rem;
+  }
+}
+
+#top {
+  color: white;
+  hr {
+    background-color: white;
+  }
+  table,
+  tr {
+    border-bottom: 1px solid white;
+    border-top: 0px;
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+  .bg-container {
+    clip-path: polygon(0 100px, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .weather-info {
+    background: #220060;
+    padding: 1em 1em 0 1em;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 30px, 100% 100%, 0 100%);
+    .details {
+      font-size: 0.8em;
+      img {
+        height: 1.5em;
+      }
+    }
+    .down-arrow {
+      color: white;
+      font-size: 3em;
+    }
+  }
+}
+
+#tournaments {
+  color: white;
+  a {
+    color: white;
+  }
+  hr {
+    background-color: white;
+  }
+  .bg-container {
+    clip-path: polygon(
+      0 0,
+      100% 100px,
+      100% calc(100% - 100px),
+      0% calc(100% - 100px)
+    );
+  }
+  .blend {
+    background: #9b0700;
+    opacity: 0.6;
+    clip-path: polygon(0% 50px, 100% 0%, 100% 100%, 0% 70%);
+  }
+}
+
+#contact {
+}
+
+#arena {
+}
+
+.cover-fit {
+  object-fit: cover;
+}
+
+#abc {
+  color: white;
+  a {
+    color: white;
+  }
+  .blend {
+    background: #220060;
+    opacity: 0.6;
+    clip-path: polygon(0% 150px, 100% 0%, 100% 100%, 0% calc(100% - 150px));
+  }
+  .bg-container {
+    clip-path: polygon(
+      0 0,
+      100% 100px,
+      100% calc(100% - 100px),
+      0% calc(100% - 100px)
+    );
+  }
+}
+
+#news {
+  color: initial;
+  a {
+    color: green;
+  }
+}
+
+#beds {
+  color: white;
+  .bg {
+    background: #220060;
+    clip-path: polygon(0% 0%, 100% 100px, 100% 100%, 0% calc(100% - 100px));
+  }
+  a {
+    color: white;
+  }
+}
+
+a[name] {
+  height: 0px;
+}
+
+#academy {
+  z-index: -3;
+  table,
+  th,
+  td {
+    td:not(last-child) {
+      border-bottom: 1px solid #212529;
+    }
+    border-top: 0px;
+  }
+  .bg {
+    background: #f9e1cc;
+    clip-path: polygon(
+      0% 0%,
+      100% -50px,
+      100% calc(100% - 100px),
+      0% calc(100% - 100px)
+    );
+  }
+}
+
+.mini-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  img {
+    height: 50px;
+    width: 100%;
+  }
+}
