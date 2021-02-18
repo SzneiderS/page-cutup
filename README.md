@@ -2,7 +2,7 @@
 Simple page cutup as an academic project.
 The reference image has been provided by the lecturer.
 
-The idea was to create all the HTML/JS/CSS files to reproduce the reference image as close as possible.
+The idea was to create all the HTML/JS/CSS files to reproduce the reference image as close as possible. There is also a parallax effect on the images and responsiveness, as an additional features requested by the "client".
 
 I've decided to change a bit the "subject" of the page, while leaving all the features similar.
 
