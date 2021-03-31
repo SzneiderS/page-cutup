@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/SzneiderS/page-cutup/actions/workflows/node.js.yml/badge.svg)](https://github.com/SzneiderS/page-cutup/actions/workflows/node.js.yml)
+
 # Overview
 Simple page cutup as an academic project.
 The reference image has been provided by the lecturer.
