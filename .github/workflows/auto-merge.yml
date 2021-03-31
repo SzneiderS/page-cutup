@@ -11,5 +11,7 @@ jobs:
     steps:
       - name: automerge
         uses: "nucleos/auto-merge-action@1.0.0"
+        with:
+          label: opened
     env:
         "GITHUB_TOKEN": ${{ secrets.GITHUB_TOKEN }}
