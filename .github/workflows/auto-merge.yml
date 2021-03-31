@@ -1,0 +1,17 @@
+name: auto-merge-dependabot
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: automerge
+        uses: "nucleos/auto-merge-action@1.0.0"
+        with:
+          label: opened
+    env:
+        "GITHUB_TOKEN": ${{ secrets.GITHUB_TOKEN }}
